@@ -38,6 +38,10 @@ nav ul.menu li {
 	padding: 40px;
 }
 
+nav ul.menu a {
+	text-decoration: none;
+}
+
 nav .about-us-dropdown {
 	display: none;
 }
