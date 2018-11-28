@@ -24,14 +24,19 @@ nav {
 	display: flex;
 }
 
+.submenu-parent {
+	position: relative;
+}
+
 nav ul.menu {
-	/*margin: 0;*/
-	/*padding: 0;*/
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	/*height: 100%;*/
 	width: 100%;
+}
+
+nav ul.menu>li {
+	padding: 15px;
 }
 
 nav ul {
@@ -43,21 +48,25 @@ nav ul.menu a {
 }
 
 nav ul.submenu-dropdown li {
-	display: none;
+	visibility: hidden;
+	border: 1px red solid;
+	opacity: 0;
+	transition: all 0.2s;
 }
 
 li:hover > ul.submenu-dropdown li {
-	display: block;
-	padding: 15px 0;
-}
-
-li:hover > ul.submenu-dropdown:nth-child(2) {
-	padding-top: 20px
+	visibility: visible;
+	padding: 15px 10px;
+	opacity: 1;
+	width: inherit;
 }
 
 li > ul.submenu-dropdown {
 	position: absolute;
 	padding-left: 0;
+	top: 100%;
+	left: 0;
+	min-width: 50px;
 }
 
 /*  Banner  */
