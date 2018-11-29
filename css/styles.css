@@ -22,6 +22,7 @@ nav {
 	border: 2px pink solid;
 	position: relative;
 	display: flex;
+	font-size: 2rem;
 }
 
 .submenu-parent {
@@ -66,7 +67,6 @@ li > ul.submenu-dropdown {
 	padding-left: 0;
 	top: 100%;
 	left: 0;
-	min-width: 50px;
 }
 
 /*  Banner  */
@@ -83,6 +83,23 @@ li > ul.submenu-dropdown {
 	display: flex;
 	flex-direction: column;
 	border: 2px solid pink;
+}
+
+.clickme {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-left: 10px;
+	background-color: yellow;
+	color: teal;
+	border: none;
+	outline: none;
+}
+
+.clickme:focus {
+	border: 2px solid teal;
 }
 
 /*  Footer  */
