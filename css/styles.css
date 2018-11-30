@@ -53,13 +53,16 @@ nav ul.submenu-dropdown li {
 	border: 1px red solid;
 	opacity: 0;
 	transition: all 0.2s;
+	font-size: 0.8em;
 }
+
 
 li:hover > ul.submenu-dropdown li {
 	visibility: visible;
 	padding: 15px 10px;
 	opacity: 1;
 	width: inherit;
+	background-color: white;
 }
 
 li > ul.submenu-dropdown {
@@ -67,6 +70,7 @@ li > ul.submenu-dropdown {
 	padding-left: 0;
 	top: 100%;
 	left: 0;
+	width: 100%;
 }
 
 /*  Banner  */
