@@ -22,7 +22,7 @@ nav {
 	border: 2px pink solid;
 	position: relative;
 	display: flex;
-	font-size: 2rem;
+	font-size: 1.2rem;
 }
 
 .submenu-parent {
@@ -73,8 +73,14 @@ li > ul.submenu-dropdown {
 
 .banner {
 	width: 100%;
-	height: 35vh;
+	height: 60vh;
 	border: 2px yellow solid;
+	display: flex;
+	justify-content: center;
+}
+
+.banner img {
+	width: 100%;
 }
 
 /*  Main container  */
